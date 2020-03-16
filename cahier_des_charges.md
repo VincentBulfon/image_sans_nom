@@ -51,13 +51,13 @@
 ## Coordonnées client.
 
 - Olivier Cornil
-- [Mail](oli@oliviercornil.be) <br>
+- oli@oliviercornil.be <br>
 - [Site web](http://www.oliviercornil.be/)
 
 ## Moodboard, wireframe, design...
 
-Projet sur invision :
-Moodboard Pinterest :
+[Projet sur invision](https://projects.invisionapp.com/boards/C93YQITNM4Q/)
+[Moodboard Pinterest](https://pin.it/zsFTRl1)
 
 ## Idées
 
