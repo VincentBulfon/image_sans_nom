@@ -48,6 +48,24 @@
 - Ne pas hésitez à mettre du mouvement sur la page de landing puis apporter du clame sur les autres pages.
 - Galerie d'image [Cdlt.com](http://c-d-l-t.com/home/)
 
+## Coordonnées client.
+
+- Olivier Cornil
+- [Mail](oli@oliviercornil.be) <br>
+- [Site web](http://www.oliviercornil.be/)
+
+## Moodboard, wireframe, design...
+
+Projet sur invision :
+Moodboard Pinterest :
+
+## Idées
+
+- Menu déroulant qui qui se développe sur le bord de l'image au chargement chevauchement hors de l'image avec couleurs inversées
+- L'IMAGE SANS NOM est réparti aux 4 coins de la vitrine, peut-être transposer ça au site (se retrouve en jaune sur les images, mais peut-être en bleu ou un autre couleur éviter le noir)
+- Quand sur le site d'Olivier [Olivier Cornil](http://www.oliviercornil.be/) quand on clique sur l'image elle passe devant le texte et lorsque l'on clique sur le texte elle revient devant (peut-être sympa à faire avec des images de fonds)
+- Ne pas hésitez à mettre du mouvement sur la page de landing puis apporter du clame sur les autres pages.
+
 ## Notes pour moi-même
 
 - aller voir les autres sites de photo
