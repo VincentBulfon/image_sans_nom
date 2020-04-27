@@ -1,0 +1,23 @@
+@import "reset.scss";
+@import "fonts.scss";
+@import "variables.scss";
+@import "mobile.scss";
+@import "desktop.scss";
+
+/* Golbal styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.hidden {
+  text-indent: -99999px;
+  display: block;
+  font-size: 0px;
+  width: 0;
+  height: 0;
+}

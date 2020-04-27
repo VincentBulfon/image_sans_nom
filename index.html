@@ -1,0 +1,195 @@
+<!__ wp start header __>
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <!__ Font import __>
+    <link rel="stylesheet" href="https://use.typekit.net/tmi6trv.css" />
+    <!__ End font import __>
+    <meta charset="UTF_8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="L'Image Sans Nom est un lieu d'exposition et bibliothèque axé sur la photographie. Il y a de nombreux ouvrages à consutler et des expositions tout au long de l'année"
+    />
+    <script src="./assets/script.js"></script>
+    <title>L'image sans nom | accueil</title>
+  </head>
+  <body class="body body_nojs">
+    <h1 class="hidden body_title h1">L'image sans nom</h1>
+    <header class="header body_header">
+      <nav class="nav header_nav">
+        <h2 class="h2 nav_title">L'image sans nom</h2>
+        <input
+          type="checkbox"
+          title="voir le menu"
+          name="navigation"
+          id="nav_checkbox"
+          class="nav_burger"
+        />
+        <label for="nav_checkbox" class="nav_label">
+          <span class="hidden_text nav_lines">Afficher la navigation</span>
+        </label>
+        <div class="boxMenu nav_boxMenu">
+          <ul class="menu boxMenu_menu">
+            <li class="menu_item boxMenu_menu_item">
+              <a class="boxMenu_item_link link" href="./index.html">Accueil</a>
+            </li>
+            <li class="menu_item boxMenu_menu_item">
+              <a class="boxMenu_item_link link" href="./expos.html"
+                >Expositions</a
+              >
+            </li>
+            <li class="menu_item boxMenu_menu_item">
+              <a class="boxMenu_item_link link" href="#">Livres</a>
+            </li>
+            <li class="menu_item boxMenu_menu_item">
+              <a class="boxMenu_item_link link" href="#">Gallerie</a>
+            </li>
+            <li class="menu_item boxMenu_menu_item">
+              <a class="boxMenu_item_link link" href="#">Le lieu</a>
+            </li>
+            <li class="menu_item boxMenu_menu_item">
+              <a class="boxMenu_item_link link" href="#">Contact</a>
+            </li>
+          </ul>
+          <a href="#TODO" class="header_lang lang_switcher"
+            ><span class="hidden">passer le site en anglais</span>EN</a
+          >
+        </div>
+      </nav>
+      <section class="header_section intro main_grid">
+        <h2 class="header_section_h2 h2 hidden">
+          Introduction à l'image sans nom
+        </h2>
+        <span class="location header_section_location"
+          >4000 Liège, Place Vivegnis 6</span
+        >
+        <p class="introduction header_section_introduction">
+          L'image sans nom, lieu d'exposition et bibliothèque lié à la
+          photographie.
+        </p>
+        <figure class="banner header_section_banner">
+          <img
+            class="section_img header_section_img"
+            srcset="assets/img/isn_facade.jpg"
+            alt="Facade du lieu d'exposition l'image sans nom"
+            width="#TODO"
+            height="#TODO"
+          />
+        </figure>
+        <span class="scroll header_section_scroll">Scroll</span>
+      </section>
+    </header>
+    <main class="main">
+      <!--wp end header -->
+      <!-- wp start last posts -->
+      <section class="main_section section_grid">
+        <div class="section_text_container text_container">
+          <h2 class="h2 text_container_title">Un titre de livre intéressant</h2>
+          <span class="text_container_date date">03/05</span>
+          <span class="text_container_author author">Jean_François Menès</span>
+        </div>
+        <div class="section_img_container">
+          <figure class="img_container_prev">
+            <img
+              srcset="#TODO"
+              alt="Photo ou affiche du livre/expo mis/mise en avant"
+              class="img_container_img"
+              width="246"
+              height="164"
+            />
+            <p class="img_container_text">
+              Ce livre est intéressant car il présente la photographie sous un
+              nouveau jour et nous montre des images inabithuelles.
+            </p>
+          </figure>
+        </div>
+        <div class="section_btn_container">
+          <a href="#TODO" class="btn btn--big btn--black btn_container_btn1"
+            >En voir plus<span class="hidden btn_container_text"
+              >Sur #TODO</span
+            ></a
+          >
+        </div>
+      </section>
+      <section class="main_section section_grid">
+        <div class="section_text_container text_container">
+          <h2 class="h2 text_container_title">Un titre de livre intéressant</h2>
+          <span class="text_container_date date">03/05</span>
+          <span class="text_container_author author">Jean_François Menès</span>
+        </div>
+        <div class="section_img_container">
+          <figure class="img_container_figure">
+            <img
+              srcset="#TODO"
+              alt="Photo ou affiche du livre/expo mis/mise en avant"
+              class="img_container_img"
+              width="#TODO"
+              height="#TODO"
+            />
+            <p class="img_container_text">
+              Ce livre est intéressant car il présente la photographie sous un
+              nouveau jour et nous montre des images inabithuelles.
+            </p>
+          </figure>
+        </div>
+        <div class="section_btn_container">
+          <a href="#TODO" class="btn btn--big btn--black main_section_btn1"
+            >En voir plus<span class="hidden btn_hidden_text"
+              >Sur #TODO</span
+            ></a
+          >
+          <a href="#TODO" class="btn btn--big btn--black main_section_btn2"
+            >Voir sur Facebook<span class="hidden btn_hidden_text"
+              >Sur #TODO</span
+            ></a
+          >
+        </div>
+      </section>
+      <!--wp end last posts -->
+      <!-- wp start footer -->
+    </main>
+    <footer class="footer">
+      <h2 class="hidden">Footer</h2>
+      <div class="newsletter">
+        <p class="newsletter_intro">
+          Envie d'être au courant de nos dernières expos ?
+        </p>
+        <form action="#TODO" class="newsletter_form">
+          <label for="newsEmail" class="newsletter_form_label"
+            >Inscrivez vous à notre newsletter&nbsp;!</label
+          ><input type="email" name="newsEmail" id="newsEmail"
+          class="newsletter_form_input" placeholder="Newsletter"" />
+          <button type="submit" class="btn btn--small btn--white" type="submit">
+            Souscrire
+          </button>
+        </form>
+      </div>
+      <nav class="nav_secondary">
+        <h2 class="nav_secondary_title hidden">Navigation secondaire</h2>
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="#TODO" class="nav_item_link link">Accueil</a>
+          </li>
+          <li class="nav_item">
+            <a href="#TODO" class="nav_item_link link">Expo</a>
+          </li>
+          <li class="nav_item">
+            <a href="#TODO" class="nav_item_link link">Livres</a>
+          </li>
+          <li class="nav_item">
+            <a href="#TODO" class="nav_item_link link">Gallerie</a>
+          </li>
+          <li class="nav_item">
+            <a href="#TODO" class="nav_item_link link">Le lieu</a>
+          </li>
+          <li class="nav_item">
+            <a href="#TODO" class="nav_item_link link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
+<!-- wp end footer -->

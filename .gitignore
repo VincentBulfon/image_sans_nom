@@ -1,0 +1,6 @@
+node_modules
+assets/
+mix-manifest.json
+package-lock.json
+yarn.lock
+hot

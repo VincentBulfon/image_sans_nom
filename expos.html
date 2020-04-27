@@ -1,0 +1,205 @@
+<!-- wp start header -->
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <!-- Font import -->
+    <link rel="stylesheet" href="https://use.typekit.net/tmi6trv.css" />
+    <!-- End font import -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="L'Image Sans Nom est un lieu d'exposition et bibliothèque axé sur la photographie. Il y a de nombreux ouvrages à consutler et des expositions tout au long de l'année"
+    />
+    <script src="./assets/script.js"></script>
+    <title>L'image sans nom | accueil</title>
+  </head>
+  <body class="body body_nojs">
+    <h1 class="hidden body_title h1">L'image sans nom</h1>
+    <header class="header body_header">
+      <nav class="nav header_nav">
+        <h3 class="h3 nav_title">L'image sans nom</h3>
+        <input
+          type="checkbox"
+          title="voir le menu"
+          name="navigation"
+          id="nav_checkbox"
+          class="nav_burger"
+        />
+        <label for="nav_checkbox" class="nav_label">
+          <span class="hidden_text nav_lines">Afficher la navigation</span>
+        </label>
+        <div class="boxMenu nav_boxMenu">
+          <ul class="menu boxMenu_menu">
+            <li class="menu_item boxMenu_menu_item">
+              <a class="boxMenu_item_link link" href="./index.html">Accueil</a>
+            </li>
+            <li class="menu_item boxMenu_menu_item">
+              <a class="boxMenu_item_link link" href="./expos.html"
+                >Expositions</a
+              >
+            </li>
+            <li class="menu_item boxMenu_menu_item">
+              <a class="boxMenu_item_link link" href="#">Livres</a>
+            </li>
+            <li class="menu_item boxMenu_menu_item">
+              <a class="boxMenu_item_link link" href="#">Gallerie</a>
+            </li>
+            <li class="menu_item boxMenu_menu_item">
+              <a class="boxMenu_item_link link" href="#">Le lieu</a>
+            </li>
+            <li class="menu_item boxMenu_menu_item">
+              <a class="boxMenu_item_link link" href="#">Contact</a>
+            </li>
+          </ul>
+          <a href="#TODO" class="header_lang lang_switcher"
+            ><span class="hidden">passer le site en anglais</span>EN</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- wp end header -->
+      <!-- wp start expo page -->
+      <div class="main_wrapper">
+        <h2 class="wrapper_title">Expositions</h2>
+        <form action="#TODO" method="get" class="search_form">
+          <label for="search_from_input" class="search_form_label"
+            >Rechercher&nbsp;:</label
+          >
+          <input
+            type="text"
+            name="search"
+            id="search_form_input"
+            class="search_form_input"
+            placeholder="Rechercher"
+          />
+          <button type="submit" class="search_form_button btn btn--extrasmall">
+            <span class="hidden">Rechercher</span>
+            <svg
+              class="search_form_icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 30 30"
+              width="30"
+              height="30"
+            >
+              <path
+                d="M13 3C7.489 3 3 7.489 3 13s4.489 10 10 10a9.947 9.947 0 006.322-2.264l5.971 5.971a1 1 0 101.414-1.414l-5.97-5.97A9.947 9.947 0 0023 13c0-5.511-4.489-10-10-10zm0 2c4.43 0 8 3.57 8 8s-3.57 8-8 8-8-3.57-8-8 3.57-8 8-8z"
+              />
+            </svg>
+          </button>
+        </form>
+        <article class="main_article">
+          <!-- Modifier le alt en fonction du type de post (livre ou expo) pour afficher soir affiche de l'exposition "toto" ou couverture du liver "tata" -->
+          <img
+            srcset="#"
+            alt="#TODO"
+            class="article_poster"
+            width="#TODO"
+            heigh="#TODO"
+          />
+          <div class="article_text_prev">
+            <h3 class="article_title">Hypermnésies</h3>
+            <span class="article_date">16/11>10/12</span>
+            <span class="article_author">Nicolas Bomal</span>
+          </div>
+          <div class="article_text_content">
+            <p class="article_text_text">
+              Vernissage de l’exposition Hypermnésies de Nicolas Bomal. Des
+              carnets, des images qui en sortent, des images jamais encore
+              imprimées, des souvenirs. Cuba, l’Albanie et la Belgique de
+              Nicolas. A partir de 18h le vendredi 16 novembre. Expo également
+              le samedi 17 et le dimanche 18 de 13 à 18h.
+            </p>
+            <div class="article_btn_container">
+              <a href="#TODO" class="btn btn--big btn--black main_section_btn1"
+                >En voir plus<span class="hidden btn_hidden_text"
+                  >Sur #TODO</span
+                ></a
+              >
+              <a href="#TODO" class="btn btn--big btn--black main_section_btn2"
+                >Voir sur Facebook<span class="hidden btn_hidden_text"
+                  >Sur #TODO</span
+                ></a
+              >
+            </div>
+          </div>
+        </article>
+        <div class="pagination">
+          <button class="pagination_previous">
+            <span class="hidden">Page précédente</span>
+          </button>
+          <ol class="pagination_list">
+            <li class="pagination_item">
+              <a href="#TODO" class="pagination_link">2</a>
+            </li>
+            <li class="pagination_item">
+              <a href="#TODO" class="pagination_link">3</a>
+            </li>
+            <li class="pagination_item">
+              <a href="#TODO" class="pagination_link pagination_active">4</a>
+            </li>
+            <li class="pagination_item">
+              <a href="#TODO" class="pagination_link">5</a>
+            </li>
+            <li class="pagination_item">
+              <a href="#TODO" class="pagination_link">6</a>
+            </li>
+          </ol>
+          <button class="pagination_next">
+            <span class="hidden">Page suivante</span>
+          </button>
+        </div>
+      </div>
+      <!-- wp end expo page -->
+      <!-- wp start footer -->
+    </main>
+    <footer class="footer">
+      <h3 class="hidden">Footer</h3>
+      <div class="newsletter">
+        <p class="newsletter_intro">
+          Envie d'être au courant de nos dernières expos ?
+        </p>
+        <form action="#TODO" class="newsletter_form">
+          <label for="newsEmail" class="newsletter_form_label"
+            >Inscrivez vous à notre newsletter&nbsp;!</label
+          ><input
+            type="email"
+            name="newsEmail"
+            id="newsEmail"
+            class="newsletter_form_input"
+            placeholder="Newsletter"
+          />
+          <button type="submit" class="btn btn--small btn--white" type="submit">
+            Souscrire
+          </button>
+        </form>
+      </div>
+      <nav class="nav_secondary">
+        <h3 class="nav_secondary_title hidden">Navigation secondaire</h3>
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="#TODO" class="nav_item_link link">Accueil</a>
+          </li>
+          <li class="nav_item">
+            <a href="#TODO" class="nav_item_link link">Expo</a>
+          </li>
+          <li class="nav_item">
+            <a href="#TODO" class="nav_item_link link">Livres</a>
+          </li>
+          <li class="nav_item">
+            <a href="#TODO" class="nav_item_link link">Gallerie</a>
+          </li>
+          <li class="nav_item">
+            <a href="#TODO" class="nav_item_link link">Le lieu</a>
+          </li>
+          <li class="nav_item">
+            <a href="#TODO" class="nav_item_link link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
+<!-- wp end footer -->
