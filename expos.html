@@ -62,6 +62,7 @@
     <main class="main">
       <!-- wp end header -->
       <!-- wp start expo page -->
+      <!-- WP LOOP OVER THIS POST -->
       <div class="main_wrapper">
         <h2 class="wrapper_title">Expositions</h2>
         <form action="#TODO" method="get" class="search_form">
@@ -90,29 +91,67 @@
             </svg>
           </button>
         </form>
-        <article class="main_article">
+        <article class="main_expo">
           <!-- Modifier le alt en fonction du type de post (livre ou expo) pour afficher soir affiche de l'exposition "toto" ou couverture du liver "tata" -->
           <img
             srcset="#"
             alt="#TODO"
-            class="article_poster"
+            class="expo_poster"
             width="#TODO"
             heigh="#TODO"
           />
-          <div class="article_text_prev">
-            <h3 class="article_title">Hypermnésies</h3>
-            <span class="article_date">16/11>10/12</span>
-            <span class="article_author">Nicolas Bomal</span>
+          <div class="expo_text_prev">
+            <h3 class="expo_title">Hypermnésies</h3>
+            <span class="expo_date">16/11>10/12</span>
+            <span class="expo_author">Nicolas Bomal</span>
           </div>
-          <div class="article_text_content">
-            <p class="article_text_text">
+          <div class="expo_text_content">
+            <p class="expo_text_text">
               Vernissage de l’exposition Hypermnésies de Nicolas Bomal. Des
               carnets, des images qui en sortent, des images jamais encore
               imprimées, des souvenirs. Cuba, l’Albanie et la Belgique de
               Nicolas. A partir de 18h le vendredi 16 novembre. Expo également
               le samedi 17 et le dimanche 18 de 13 à 18h.
             </p>
-            <div class="article_btn_container">
+            <div class="expo_btn_container">
+              <a href="#TODO" class="btn btn--big btn--black main_section_btn1"
+                >En voir plus<span class="hidden btn_hidden_text"
+                  >Sur #TODO</span
+                ></a
+              >
+              <a href="#TODO" class="btn btn--big btn--black main_section_btn2"
+                >Voir sur Facebook<span class="hidden btn_hidden_text"
+                  >Sur #TODO</span
+                ></a
+              >
+            </div>
+          </div>
+        </article>
+        <!-- WP LOOP OVER THIS POST -->
+        <!-- DELETE FOR WP integration -->
+        <article class="main_expo">
+          <!-- Modifier le alt en fonction du type de post (livre ou expo) pour afficher soir affiche de l'exposition "toto" ou couverture du liver "tata" -->
+          <img
+            srcset="#"
+            alt="#TODO"
+            class="expo_poster"
+            width="#TODO"
+            heigh="#TODO"
+          />
+          <div class="expo_text_prev">
+            <h3 class="expo_title">Hypermnésies</h3>
+            <span class="expo_date">16/11>10/12</span>
+            <span class="expo_author">Nicolas Bomal</span>
+          </div>
+          <div class="expo_text_content">
+            <p class="expo_text_text">
+              Vernissage de l’exposition Hypermnésies de Nicolas Bomal. Des
+              carnets, des images qui en sortent, des images jamais encore
+              imprimées, des souvenirs. Cuba, l’Albanie et la Belgique de
+              Nicolas. A partir de 18h le vendredi 16 novembre. Expo également
+              le samedi 17 et le dimanche 18 de 13 à 18h.
+            </p>
+            <div class="expo_btn_container">
               <a href="#TODO" class="btn btn--big btn--black main_section_btn1"
                 >En voir plus<span class="hidden btn_hidden_text"
                   >Sur #TODO</span
@@ -138,7 +177,8 @@
               <a href="#TODO" class="pagination_link">3</a>
             </li>
             <li class="pagination_item">
-              <a href="#TODO" class="pagination_link pagination_active">4</a>
+              <a href="#TODO" class="pagination_link force_active">4</a
+              ><!-- #REMOVE -->
             </li>
             <li class="pagination_item">
               <a href="#TODO" class="pagination_link">5</a>
@@ -152,6 +192,7 @@
           </button>
         </div>
       </div>
+      <!-- DELTE FRO WP integration -->
       <!-- wp end expo page -->
       <!-- wp start footer -->
     </main>

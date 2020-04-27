@@ -249,15 +249,20 @@ h3 {
 }
 
 .section_text_container,
-.section_btn_container,
+.btn_container,
 .img_container_text,
 .img_container_img,
-.article_text_prev,
-.article_poster,
-.article_text_content,
+.expo_text_prev,
+.expo_poster,
+.expo_text_content,
 .search_form,
 .wrapper_title {
   padding: 0 11.5625%;
+}
+
+.btn_container,
+.expo_btn_container {
+  padding-bottom: 2.647em;
 }
 
 .img_container_text {
@@ -268,6 +273,7 @@ h3 {
   font-weight: 400;
   line-height: 1.4em;
 }
+
 .text_container_title {
   &::after {
     content: "";
@@ -281,8 +287,9 @@ h3 {
     background-color: $yellow;
   }
 }
+
 .text_container_title,
-.article_title {
+.expo_title {
   position: relative;
   display: inline;
   max-width: 73.98373984%;
@@ -294,42 +301,37 @@ h3 {
 
 .text_container_date,
 .text_container_author,
-.article_date,
-.article_author {
+.expo_date,
+.expo_author {
   display: block;
   font-size: 1.25em;
 }
+
 .text_container_date,
-.article_date {
+.expo_date {
   color: $textMidBlack;
   margin: 0.61805em 0 0.61805em;
 }
+
 .text_container_author,
-.article_author {
+.expo_author {
   color: $textLightBlack;
   margin-bottom: 1.25em;
 }
 
-.btn--big {
-  &::after {
-    height: calc(1em + 2.24em);
-  }
-  padding: 1.125em 1em;
-  font-size: 1.011rem;
-}
-
 .btn {
-  &::after {
+  &::before {
     content: "";
     display: block;
-    width: 100%;
+    z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    width: 100%;
     transition: 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    background-color: $yellow;
   }
-  &:hover::after {
+  &:hover::before {
     left: -4px;
     top: -4px;
   }
@@ -340,18 +342,47 @@ h3 {
   text-decoration: none;
   border: none;
   transition: 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
-}
-
-.btn--black {
-  &::after {
-    background-color: $yellow;
+  &--big {
+    &::before {
+      height: calc(1em + 2.24em);
+    }
+    padding: 1.125em 1em;
+    font-size: 1.011rem;
   }
-  &:hover {
-    color: $textWhite;
+  &--black {
+    &:hover {
+      color: $textWhite;
+    }
+    background-color: $bgBlack;
+    color: $yellow;
+    margin-top: 1.25em;
   }
-  background-color: $bgBlack;
-  color: $yellow;
-  margin-top: 1.25em;
+  &--small {
+    &:before {
+      height: calc(1em + 1.8em);
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: calc(1em + 1.8em);
+      width: 100%;
+      background-color: #ffff;
+      z-index: -1;
+    }
+    position: relative;
+    padding: 1.125em 1em;
+    font-size: 1.011rem;
+    padding: 0.773em;
+    font-size: 0.773em;
+  }
+  &--white {
+    background-color: transparent;
+    display: inline-block;
+    z-index: 0;
+  }
 }
 
 /* Footer style */
@@ -359,11 +390,13 @@ h3 {
   background-color: $bgBlack;
   padding: 1.636em 0;
 }
+
 .newsletter_intro,
 .newsletter_form {
   max-width: 76.875%;
   margin: 0 auto;
 }
+
 .newsletter_intro {
   font-family: "Source sans pro";
   font-size: 1.011em; /* 16.18em */
@@ -384,34 +417,24 @@ h3 {
   margin-bottom: 1.011em;
   text-align: center;
 }
+
 .newsletter_form_input {
   margin-right: 10px;
   line-height: 1.5em;
   width: calc(100% - 77.56px);
-}
-.btn--small {
-  &::after {
-    height: calc(1em + 2.25em);
-  }
-  padding: 1.125em 1em;
-  font-size: 1.011rem;
-  padding: 0.773em;
-  font-size: 0.773em;
-}
-.btn--white {
-  background-color: #fff;
-  display: inline-block;
 }
 
 .nav_secondary {
   margin: 1.25em auto 0;
   max-width: 76.875%;
 }
+
 .nav_list {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
+
 .nav_item {
   display: inline-block;
   font-size: 0.625em;
@@ -423,13 +446,15 @@ h3 {
   margin-top: 75px;
   z-index: -10;
 }
+
 .wrapper_title {
   font-size: 1.25em;
   color: $textBlack;
   padding-top: 2.023em;
   margin-bottom: 1.636em;
 }
-.main_article {
+
+.main_expo {
   display: flex;
   flex-direction: column;
   /* flex-start default value is flex-start */
@@ -450,39 +475,55 @@ h3 {
   display: block;
   width: 100%;
 }
+
 .search_form_input {
   border: 1px solid $textLightBlack;
   line-height: 1.6em;
-  width: 84.95934959%;
+  width: 84.14634146%;
+  max-width: 480px;
 }
 
 .search_form_button {
-  &::after {
+  &::before {
     width: 27px;
     height: 27px;
     background-color: $yellow;
   }
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 10px;
   width: 28px;
   height: 27px;
   background-color: $bgBlack;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: pointer;
 }
+
 .search_form_icon {
   width: 14px;
   height: 14px;
-  fill: white;
+  fill: $yellow;
 }
 
-.article_text_prev {
-  order: -1;
+.expo_text_prev,
+.expo_poster {
+  background-color: $bgLightGray;
 }
-.article_text_content {
+
+.expo_text_prev {
+  order: -1;
+  padding-top: 1em;
+}
+
+.expo_poster {
+  padding-bottom: 1em;
+}
+
+.expo_text_content {
   padding-top: 1.636em;
 }
-.article_text_text {
+
+.expo_text_text {
   line-height: 1.5em;
 }
 
@@ -492,7 +533,6 @@ h3 {
   align-items: center;
   padding-top: 1.636em;
   padding-bottom: 1.636em;
-  background-color: $bgLightGray;
 }
 
 .pagination_list {
@@ -500,8 +540,11 @@ h3 {
   align-items: center;
 }
 
+.pagination_previous,
+.pagination_next,
+.pagination,
 .pagination_link {
-  background-color: #fff;
+  background-color: $bgLightGray;
 }
 
 .pagination_previous,
@@ -538,28 +581,64 @@ h3 {
 }
 
 .pagination_link {
+  &:active {
+    position: relative;
+    color: white;
+    &::before {
+      content: "";
+      display: block;
+      z-index: -1;
+      width: 100%;
+      height: 24px;
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      background-color: $yellow;
+    }
+    &::after {
+      content: "";
+      display: block;
+      z-index: -1;
+      width: 100%;
+      height: 24px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $bgBlack;
+    }
+  }
   display: block;
-  text-decoration: none;
-  color: $textBlack;
+  z-index: 0;
   width: 24px;
   line-height: 24px;
   text-align: center;
+  text-decoration: none;
+  color: $textBlack;
 }
-
-.pagination_active {
-  position: relative;
-  background-color: $bgBlack;
-  color: white;
-
-  &::after {
+.force_active {
+  &::before {
     content: "";
     display: block;
+    z-index: -1;
     width: 100%;
     height: 24px;
     position: absolute;
     top: -4px;
     left: -4px;
-    z-index: -1;
     background-color: $yellow;
   }
+  &::after {
+    content: "";
+    display: block;
+    z-index: -1;
+    width: 100%;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $bgBlack;
+  }
+  position: relative;
+  //background-color: $bgBlack;
+  color: white;
 }
