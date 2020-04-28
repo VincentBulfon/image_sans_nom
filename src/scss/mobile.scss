@@ -1,5 +1,5 @@
 /* JS styles */
-.body_js {
+.body__js {
   //style here
 }
 
@@ -12,10 +12,10 @@ h3 {
 
 /* All $yellow texts */
 .text,
-.nav_title,
-.header_section,
-.newsletter_intro,
-.newsletter_form_label {
+.nav__title,
+.header__section,
+.newsletter__intro,
+.newsletter__form__label {
   color: $yellow;
 }
 
@@ -32,19 +32,19 @@ h3 {
   z-index: 1;
 }
 
-.nav_burger {
+.nav__burger {
   display: block;
   position: absolute;
   top: -999999px;
   &:checked {
-    & ~ .nav_boxMenu {
+    & ~ .nav__boxMenu {
       left: 0;
       opacity: 1;
     }
   }
 }
 
-.nav_label {
+.nav__label {
   display: block;
   position: relative;
   cursor: pointer;
@@ -53,7 +53,7 @@ h3 {
   height: 38px;
 }
 
-.nav_lines {
+.nav__lines {
   &::before {
     content: "";
     position: absolute;
@@ -75,19 +75,19 @@ h3 {
   left: 0;
   font-size: 0;
 }
-.nav_lines {
+.nav__lines {
   top: 9px;
 }
-.nav_lines::before {
+.nav__lines::before {
   top: 9px;
 }
 
-.nav_lines::after {
+.nav__lines::after {
   top: 18px;
 }
 
 .text,
-.nav_title {
+.nav__title {
   font-size: $base-scale;
   max-width: 93px;
   line-height: 1.1875em;
@@ -131,16 +131,16 @@ h3 {
   }
 }
 
-.boxMenu_item_link {
+.boxMenu__item__link {
   font-size: 1.25em;
   font-weight: medium;
 }
 
-.menu_item:not(:last-child) {
+.menu__item:not(:last-child) {
   padding-bottom: 1.1875em;
 }
 
-.lang_switcher {
+.lang__switcher {
   background-color: $yellow;
   color: $textBlack;
   text-decoration: underline;
@@ -159,20 +159,20 @@ h3 {
   margin-top: 75px;
 }
 
-.header_section {
+.header__section {
   padding: 1em 11.5625% 0;
   background-color: $bgBlack;
   min-height: calc(100vh - 75px);
   grid-auto-rows: max-content max-content max-content 1fr max-content;
 }
 
-.main_grid {
+.main__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 10px;
 }
 
-.header_section_location {
+.header__section__location {
   grid-column: span 4;
   font-family: $Nove;
   font-size: 0.77em;
@@ -188,7 +188,7 @@ h3 {
   }
 }
 
-.header_section_introduction {
+.header__section__introduction {
   font-size: 1.011em;
   font-weight: 700;
   grid-column: span 4;
@@ -197,19 +197,19 @@ h3 {
   max-width: 485px;
 }
 
-.header_section_banner {
+.header__section__banner {
   grid-column: span 4;
   margin-bottom: 2.618em;
   overflow: hidden;
 }
 
-.header_section_img {
+.header__section__img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   position: relative;
 }
-.header_section_scroll {
+.header__section__scroll {
   font-family: $Nove;
   display: block;
   grid-column: span 4;
@@ -244,28 +244,28 @@ h3 {
 
 /* Main style */
 /* Main Section style */
-.main_section {
+.main__section {
   padding: 3.236em 0 0;
 }
 
-.section_text_container,
-.btn_container,
-.img_container_text,
-.img_container_img,
-.expo_text_prev,
-.expo_poster,
-.expo_text_content,
-.search_form,
-.wrapper_title {
+.section__text__container,
+.btn__container,
+.img__container__text,
+.img__container__img,
+.expo__text__prev,
+.expo__poster,
+.expo__text__content,
+.search__form,
+.wrapper__title {
   padding: 0 11.5625%;
 }
 
-.btn_container,
-.expo_btn_container {
+.btn__container,
+.expo__btn__container {
   padding-bottom: 2.647em;
 }
 
-.img_container_text {
+.img__container__text {
   background-color: $bgBlack;
   padding-top: 1.25em;
   padding-bottom: 1.25em;
@@ -274,7 +274,7 @@ h3 {
   line-height: 1.4em;
 }
 
-.text_container_title {
+.text__container__title {
   &::after {
     content: "";
     display: block;
@@ -288,8 +288,8 @@ h3 {
   }
 }
 
-.text_container_title,
-.expo_title {
+.text__container__title,
+.expo__title {
   position: relative;
   display: inline;
   max-width: 73.98373984%;
@@ -299,23 +299,24 @@ h3 {
   color: $textBlack;
 }
 
-.text_container_date,
-.text_container_author,
-.expo_date,
-.expo_author {
+.text__container__date,
+.text__container__author,
+.expo__date,
+.expo__author {
   display: block;
   font-size: 1.25em;
 }
 
-.text_container_date,
-.expo_date {
+.text__container__date,
+.expo__date {
   color: $textMidBlack;
-  margin: 0.61805em 0 0.61805em;
+  margin: 0.61805em 0 0;
 }
 
-.text_container_author,
-.expo_author {
+.text__container__author,
+.expo__author {
   color: $textLightBlack;
+  margin-top: 0.61805em;
   margin-bottom: 1.25em;
 }
 
@@ -391,26 +392,26 @@ h3 {
   padding: 1.636em 0;
 }
 
-.newsletter_intro,
-.newsletter_form {
+.newsletter__intro,
+.newsletter__form {
   max-width: 76.875%;
   margin: 0 auto;
 }
 
-.newsletter_intro {
+.newsletter__intro {
   font-family: "Source sans pro";
   font-size: 1.011em; /* 16.18em */
   text-align: center;
 }
 
-.newsletter_form {
+.newsletter__form {
   margin-top: 1.636em;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.newsletter_form_label {
+.newsletter__form__label {
   display: block;
   width: 100%;
   font-weight: 700;
@@ -418,56 +419,56 @@ h3 {
   text-align: center;
 }
 
-.newsletter_form_input {
+.newsletter__form__input {
   margin-right: 10px;
   line-height: 1.5em;
   width: calc(100% - 77.56px);
 }
 
-.nav_secondary {
+.nav__secondary {
   margin: 1.25em auto 0;
   max-width: 76.875%;
 }
 
-.nav_list {
+.nav__list {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.nav_item {
+.nav__item {
   display: inline-block;
   font-size: 0.625em;
 }
 
 /* Expos/livres page */
 
-.main_wrapper {
+.main__wrapper {
   margin-top: 75px;
   z-index: -10;
 }
 
-.wrapper_title {
+.wrapper__title {
   font-size: 1.25em;
   color: $textBlack;
   padding-top: 2.023em;
   margin-bottom: 1.636em;
 }
 
-.main_expo {
+.main__expo {
   display: flex;
   flex-direction: column;
   /* flex-start default value is flex-start */
 }
 
-.search_form {
+.search__form {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 1.636em;
 }
 
-.search_form_label {
+.search__form__label {
   font-size: 0.773em;
   font-family: $Nove;
   display: block;
@@ -476,14 +477,14 @@ h3 {
   width: 100%;
 }
 
-.search_form_input {
+.search__form__input {
   border: 1px solid $textLightBlack;
   line-height: 1.6em;
   width: 84.14634146%;
   max-width: 480px;
 }
 
-.search_form_button {
+.search__form__button {
   &::before {
     width: 27px;
     height: 27px;
@@ -499,31 +500,31 @@ h3 {
   cursor: pointer;
 }
 
-.search_form_icon {
+.search__form__icon {
   width: 14px;
   height: 14px;
   fill: $yellow;
 }
 
-.expo_text_prev,
-.expo_poster {
+.expo__text__prev,
+.expo__poster {
   background-color: $bgLightGray;
 }
 
-.expo_text_prev {
+.expo__text__prev {
   order: -1;
   padding-top: 1em;
 }
 
-.expo_poster {
+.expo__poster {
   padding-bottom: 1em;
 }
 
-.expo_text_content {
+.expo__text__content {
   padding-top: 1.636em;
 }
 
-.expo_text_text {
+.expo__text__text {
   line-height: 1.5em;
 }
 
@@ -535,20 +536,20 @@ h3 {
   padding-bottom: 1.636em;
 }
 
-.pagination_list {
+.pagination__list {
   display: flex;
   align-items: center;
 }
 
-.pagination_previous,
-.pagination_next,
+.pagination__previous,
+.pagination__next,
 .pagination,
-.pagination_link {
+.pagination__link {
   background-color: $bgLightGray;
 }
 
-.pagination_previous,
-.pagination_next {
+.pagination__previous,
+.pagination__next {
   &::before {
     content: "";
     position: absolute;
@@ -568,19 +569,19 @@ h3 {
   cursor: pointer;
 }
 
-.pagination_previous {
+.pagination__previous {
   &::before {
     transform: rotate(45deg);
   }
 }
 
-.pagination_next {
+.pagination__next {
   &::before {
     transform: rotate(-135deg);
   }
 }
 
-.pagination_link {
+.pagination__link {
   &:active {
     position: relative;
     color: white;
@@ -615,7 +616,7 @@ h3 {
   text-decoration: none;
   color: $textBlack;
 }
-.force_active {
+.force__active {
   &::before {
     content: "";
     display: block;
