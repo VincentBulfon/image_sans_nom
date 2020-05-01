@@ -62,108 +62,82 @@
           >
         </div>
       </nav>
-      <section class="header__section intro main__grid">
-        <h2 class="header__section__h2 h2 hidden">
-          Introduction à l'image sans nom
-        </h2>
-        <span class="location header__section__location"
-          >4000 Liège, Place Vivegnis 6</span
-        >
-        <p class="introduction header__section__introduction">
-          L'image sans nom, lieu d'exposition et bibliothèque lié à la
-          photographie.
-        </p>
-        <figure class="banner header__section__banner">
-          <img
-            class="section__img header__section__img"
-            srcset="assets/img/isn_facade.jpg"
-            alt="Facade du lieu d'exposition l'image sans nom"
-            width="#TODO"
-            height="#TODO"
-          />
-        </figure>
-        <span class="scroll header__section__scroll">Scroll</span>
-      </section>
     </header>
     <main class="main">
-      <!--wp end header -->
-      <!-- wp start last posts -->
-      <section class="main__section section__grid">
-        <div class="section__text__container text__container">
-          <h2 class="h2 text__container__title">
-            Un titre de livre intéressant
-          </h2>
-          <span class="text__container__date date">03/05</span>
-          <span class="text__container__author author"
-            >Jean-François Menès</span
-          >
-        </div>
-        <div class="img__container">
-          <figure class="img__container__prev">
-            <img
-              srcset="./assets/img/nico_bom_affiche.jpg"
-              alt="Photo ou affiche du livre/expo mis/mise en avant"
-              class="img__container__img"
-            />
-            <div class="img__container__text">
-              <p class="img__container__paragraph">
-                Ce livre est intéressant car il présente la photographie sous un
-                nouveau jour et nous montre des images inabithuelles.
-              </p>
+      <!-- wp end header -->
+      <!-- wp start place page -->
+
+      <section class="wrapper">
+        <div class="wrapper__bg">
+          <h2 class="wrapper__title--nomargin">Le lieu</h2>
+          <section class="container">
+            <div class="container__tier1">
+              <figure class="place__img">
+                <img
+                  src="./assets/img/bibli.jpg"
+                  alt=""
+                  class="place__img__content"
+                />
+              </figure>
+                <h3 class="place__text__title">L'image sans nom</h3>
+                <span class="place__text__imp"
+                  >Un lieu pour les livres et la photographie
+                </span>
+                <p class="place__text__content">
+                  L’Image sans nom est lieu d’expositions liées à la photographie
+                  et au livre, souvent aux deux. Il est aussi un centre de
+                  documentation : fort de quelques milliers de titres,
+                  principalement de photographie, et d’autres arts également,
+                  disponibles en consultation. Il est enfin un atelier
+                  d’impression jet d’encre ouvert à toute demande.
+                </p>
             </div>
-          </figure>
-        </div>
-        <div class="btn__container">
-          <a href="#TODO" class="btn btn--big btn--black btn__container__btn1"
-            >En voir plus<span class="hidden btn__container__text"
-              >Sur #TODO</span
-            ></a
-          >
-        </div>
-      </section>
-      <section class="main__section section__grid">
-        <div class="section__text__container text__container">
-          <h2 class="h2 text__container__title">
-            Un titre de livre intéressant
-          </h2>
-          <span class="text__container__date date">03/05</span>
-          <span class="text__container__author author"
-            >Jean--François Menès</span
-          >
-        </div>
-        <div class="section__img__container">
-          <figure class="img__container__figure">
-            <img
-              srcset="./assets/img/nico_bom_affiche.jpg"
-              alt="Photo ou affiche du livre/expo mis/mise en avant"
-              class="img__container__img"
-            />
-            <div class="img__container__text">
-              <p class="img__container__paragraph">
-                Ce livre est intéressant car il présente la photographie sous un
-                nouveau jour et nous montre des images inabithuelles.
-              </p>
+            <div class="container__tier2">
+              <figure class="place__img">
+                <img
+                  src="./assets/img/bibli_expo.jpg"
+                  alt=""
+                  class="place__img__content"
+                />
+              </figure>
+              <div class="place__text">
+                <p class="place__text__content--tall">
+                  Le lieu se veut un point de rencontre pour tous les amateurs ou
+                  amoureux de livres et de photographie, et il propose depuis
+                  février 2018, sous la houlette d’Olivier Cornil, Emmanuel
+                  d’Autreppe, Christophe Collas et Matthieu Litt une série
+                  d’événements (pour) petits et grands, ateliers et rencontres,
+                  lectures et projections, expositions et interventions,
+                  séminaires et réveillons…
+                </p>
+              </div>
             </div>
-          </figure>
         </div>
-        <div class="btn__container">
-          <a href="#TODO" class="btn btn--big btn--black main__section__btn1"
-            >En voir plus<span class="hidden btn__hidden__text"
-              >Sur #TODO</span
-            ></a
-          >
-          <a href="#TODO" class="btn btn--big btn--black main__section__btn2"
-            >Voir sur Facebook<span class="hidden btn__hidden__text"
-              >Sur #TODO</span
-            ></a
-          >
-        </div>
+          <div class="container__tier3">
+            <figure class="place__img place__img--nowrapper">
+              <img
+                src="./assets/img/couloir.jpg"
+                alt=""
+                class="place__img__content"
+              />
+            </figure>
+            <div class="place__text">
+              <p class="place__text__content--italic">
+                Un lieu à taille humaine et à hauteur d’images, pour prendre le
+                temps de grignoter avec les yeux, découvrir, échanger!
+              </p>
+              <div class="btn__container">
+                <a href="#" class="btn btn--big btn--black">Prendre contact</a>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
-      <!--wp end last posts -->
+      <!-- wp end place page -->
       <!-- wp start footer -->
     </main>
     <footer class="footer">
-      <h2 class="hidden">Footer</h2>
+      <h3 class="hidden">Footer</h3>
       <div class="newsletter">
         <p class="newsletter__intro">
           Envie d'être au courant de nos dernières expos ?
@@ -171,15 +145,20 @@
         <form action="#TODO" class="newsletter__form">
           <label for="newsEmail" class="newsletter__form__label"
             >Inscrivez vous à notre newsletter&nbsp;!</label
-          ><input type="email" name="newsEmail" id="newsEmail"
-          class="newsletter__form__input" placeholder="Newsletter"" />
+          ><input
+            type="email"
+            name="newsEmail"
+            id="newsEmail"
+            class="newsletter__form__input"
+            placeholder="Newsletter"
+          />
           <button type="submit" class="btn btn--small btn--white" type="submit">
             Souscrire
           </button>
         </form>
       </div>
       <nav class="nav__secondary">
-        <h2 class="nav__secondary__title hidden">Navigation secondaire</h2>
+        <h4 class="nav__secondary__title hidden">Navigation secondaire</h4>
         <ul class="nav__list">
           <li class="nav__item">
             <a href="#TODO" class="nav__item__link link">Accueil</a>

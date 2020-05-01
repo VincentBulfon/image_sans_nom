@@ -1,6 +1,6 @@
 /* JS styles */
 .body__js {
-  //style here
+  //style apply if js is enable here
 }
 
 /* titles styles */
@@ -15,7 +15,8 @@ h3 {
 .nav__title,
 .header__section,
 .newsletter__intro,
-.newsletter__form__label {
+.newsletter__form__label,
+.btn--black {
   color: $yellow;
 }
 
@@ -44,9 +45,22 @@ h3 {
   }
 }
 
+.nav__label,
+.link,
+.header__section__img,
+.header__section__scroll,
+.expo__title,
+.text__container__title,
+.place__text__title,
+.btn,
+.pagination__previous,
+.pagination__next,
+.pagination__link:active {
+  position: relative;
+}
+
 .nav__label {
   display: block;
-  position: relative;
   cursor: pointer;
   z-index: 1010;
   width: 25px;
@@ -110,7 +124,6 @@ h3 {
   color: $textWhite;
   text-decoration: none;
   font-family: "Novecento sans";
-  position: relative;
   display: inline-block;
   &:hover {
     color: $yellow;
@@ -155,7 +168,9 @@ h3 {
 }
 /* End nav style */
 /* Intro style */
-.intro {
+.intro,
+.main__wrapper,
+.wrapper__bg {
   margin-top: 75px;
 }
 
@@ -207,7 +222,6 @@ h3 {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  position: relative;
 }
 .header__section__scroll {
   font-family: $Nove;
@@ -217,7 +231,6 @@ h3 {
   font-size: 1em;
   font-weight: 500;
   margin-bottom: 3.236em;
-  position: relative;
   &:before {
     content: "";
     display: block;
@@ -252,11 +265,14 @@ h3 {
 .btn__container,
 .img__container__text,
 .img__container__img,
-.expo__text__prev,
+.expo__text__title,
 .expo__poster,
 .expo__text__content,
 .search__form,
-.wrapper__title {
+.wrapper__title,
+.gallerie__expo,
+.place__img--nowrapper,
+.place__text__content--italic {
   padding: 0 11.5625%;
 }
 
@@ -265,15 +281,41 @@ h3 {
   padding-bottom: 2.647em;
 }
 
+.img__container__img {
+  max-width: 100%;
+}
+
+.img__container__img,
+.expo__poster {
+  padding-bottom: 1em;
+}
+
 .img__container__text {
   background-color: $bgBlack;
   padding-top: 1.25em;
   padding-bottom: 1.25em;
+  width: 100%;
+}
+
+.img__container__paragraph {
   color: $textWhite;
   font-weight: 400;
   line-height: 1.4em;
+  max-width: 600px;
 }
 
+.text__container__title {
+  /* #FIXME for yellow line display */
+  display: inline-block;
+  font-family: $Nove;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: $textBlack;
+}
+/* 
+#TODO Put this part of the code inside .text__container__title style declaration
+  set a class modifier for displaying yellow line on left or right of the title
+*/
 .text__container__title {
   &::after {
     content: "";
@@ -286,25 +328,23 @@ h3 {
     height: 2px;
     background-color: $yellow;
   }
+  max-width: 73.98373984%;
 }
 
-.text__container__title,
-.expo__title {
-  position: relative;
-  display: inline;
-  max-width: 73.98373984%;
-  font-family: $Nove;
-  font-size: 1.25em;
+.expo__title,
+.place__text__title {
   font-weight: 700;
   color: $textBlack;
 }
 
+.expo__title,
+.place__text__title,
 .text__container__date,
 .text__container__author,
 .expo__date,
 .expo__author {
   display: block;
-  font-size: 1.25em;
+  font-size: 1.011em;
 }
 
 .text__container__date,
@@ -336,7 +376,6 @@ h3 {
     left: -4px;
     top: -4px;
   }
-  position: relative;
   display: block;
   width: fit-content;
   font-family: "Source Sans Pro";
@@ -373,16 +412,15 @@ h3 {
       background-color: #ffff;
       z-index: -1;
     }
-    position: relative;
     padding: 1.125em 1em;
     font-size: 1.011rem;
     padding: 0.773em;
     font-size: 0.773em;
   }
   &--white {
-    background-color: transparent;
     display: inline-block;
     z-index: 0;
+    color: $textBlack;
   }
 }
 
@@ -423,6 +461,7 @@ h3 {
   margin-right: 10px;
   line-height: 1.5em;
   width: calc(100% - 77.56px);
+  padding-left: 0.5em;
 }
 
 .nav__secondary {
@@ -441,14 +480,10 @@ h3 {
   font-size: 0.625em;
 }
 
-/* Expos/livres page */
+/* Expos/livres pages */
 
-.main__wrapper {
-  margin-top: 75px;
-  z-index: -10;
-}
-
-.wrapper__title {
+.wrapper__title,
+.wrapper__title--nomargin {
   font-size: 1.25em;
   color: $textBlack;
   padding-top: 2.023em;
@@ -506,26 +541,25 @@ h3 {
   fill: $yellow;
 }
 
-.expo__text__prev,
 .expo__poster {
   background-color: $bgLightGray;
 }
 
-.expo__text__prev {
+.expo__text__title {
   order: -1;
   padding-top: 1em;
-}
-
-.expo__poster {
-  padding-bottom: 1em;
+  &--gray {
+    background-color: $bgLightGray;
+  }
 }
 
 .expo__text__content {
   padding-top: 1.636em;
 }
 
-.expo__text__text {
+.expo__text__paragraph {
   line-height: 1.5em;
+  max-width: 480px;
 }
 
 .pagination {
@@ -561,7 +595,6 @@ h3 {
     border: 1px solid $bgBlack;
     border-width: 0 0 3px 3px;
   }
-  position: relative;
   display: block;
   border: none;
   width: 24px;
@@ -583,7 +616,6 @@ h3 {
 
 .pagination__link {
   &:active {
-    position: relative;
     color: white;
     &::before {
       content: "";
@@ -616,6 +648,9 @@ h3 {
   text-decoration: none;
   color: $textBlack;
 }
+/* ************************************************************************************************************************************************************************************************************************* */
+/* DELETE THIS BEFORE IMPLEMENTATION THIS IS JUST FOR DEISNG PURPOSE THE REAL CLASS IS .pagination__link:active  */
+
 .force__active {
   &::before {
     content: "";
@@ -642,4 +677,61 @@ h3 {
   position: relative;
   //background-color: $bgBlack;
   color: white;
+}
+/* DELETE THIS BEFORE IMPLEMENTATION THIS IS JUST FOR DEISNG PURPOSE THE REAL CLASS IS .pagination__link:active  */
+
+/* gallerie */
+
+/* Place page */
+.container__tier1,
+.container__tier2,
+.container__tier3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper__bg {
+  padding: 0 11.5625%;
+}
+
+.place__img__content {
+  &::before {
+    content: "";
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 100%;
+    height: 100%;
+    background-color: $yellow;
+  }
+  vertical-align: middle; //remove the withe space after of before the inline element (img here)
+  width: 100%;
+  margin-top: 1.375em; /* 18px from design + 4px for yellow border */
+}
+
+.place__text__title {
+  order: -1;
+}
+
+.place__text__imp {
+  font-size: 1.011em;
+  color: $textBlack;
+  font-style: italic;
+  line-height: calc(1.011em * 1.4);
+  margin-top: 1.8545994065em;
+}
+
+.place__text__content,
+.place__text__content--tall,
+.place__text__content--italic {
+  line-height: calc(1.011em * 1.4);
+  margin-top: 1.8545994065em;
+  margin-bottom: 2.647em;
+}
+
+.place__text__content--italic {
+  font-weight: 600;
+  font-style: italic;
 }
